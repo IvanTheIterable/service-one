@@ -1,0 +1,15 @@
+spring.autoconfigure.exclude: org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+
+spring:
+  application:
+     name: service-one
+  redis:
+    url: redis://localhost:6379
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+server:
+  port: 8801
